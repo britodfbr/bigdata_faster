@@ -27,18 +27,16 @@ def in_names_set():
 
 def run():
     s = time.time()
+    in_names()
     print(f"""
-    Running in_names
-    {in_names()}
-    Time taken: {time.time() - s}
-    """)
+    Running in_names ..
+    Time taken: {time.time() - s}""")
 
     s = time.time()
+    in_names_set()
     print(f"""
-    Running in_names_set
-    {in_names_set()}
-    Time taken: {time.time() - s}
-    """)    
+    Running in_names_set ..
+    Time taken: {time.time() - s}""")    
 
 
 if __name__ == "__main__":
